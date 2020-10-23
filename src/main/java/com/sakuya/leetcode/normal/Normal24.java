@@ -1,5 +1,7 @@
 package com.sakuya.leetcode.normal;
 
+import com.sakuya.leetcode.util.ListNode;
+
 /**
  * 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
  * <p>
@@ -56,22 +58,5 @@ public class Normal24 {
             temp = node1;
         }
         return dummyHead.next;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }
