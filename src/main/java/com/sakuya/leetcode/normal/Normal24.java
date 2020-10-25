@@ -59,4 +59,30 @@ public class Normal24 {
         }
         return dummyHead.next;
     }
+
+    /* 第二天的练习 */
+    public ListNode __swapPairs(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode newHead = head.next;
+        head.next = __swapPairs(newHead.next);
+        newHead.next = head;
+        return newHead;
+    }
+
+    public ListNode ___swapPairs(ListNode head) {
+        ListNode dummyNode = new ListNode(0);
+        dummyNode.next = head;
+        ListNode temp = dummyNode;
+        while (temp.next != null && temp.next.next != null) {
+            ListNode n1 = temp.next;
+            ListNode n2 = n1.next;
+            temp.next = n2;
+            n1.next = n2.next;
+            n2.next = n1;
+            temp = n1;
+        }
+        return dummyNode.next;
+    }
 }
