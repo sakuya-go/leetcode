@@ -1,4 +1,4 @@
-package com.sakuya.leetcode.week2;
+package com.sakuya.leetcode.week02;
 
 /**
  * 给定一个非负整数 num，反复将各个位上的数字相加，直到结果为一位数。
@@ -17,6 +17,9 @@ package com.sakuya.leetcode.week2;
  */
 public class Normal258   {
 
+    /**
+     * 时间复杂度O(logN)
+     */
     public int addDigits(int num) {
         int ans = 0;
         while (num != 0) {
@@ -29,6 +32,9 @@ public class Normal258   {
         return ans;
     }
 
+    /**
+     * 使用数学知识，时间复杂度O(1)
+     */
     public int _addDigits(int num) {
         return (num + 1) % 9 + 1;
     }

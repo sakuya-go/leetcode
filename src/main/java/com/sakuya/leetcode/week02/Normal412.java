@@ -1,4 +1,4 @@
-package com.sakuya.leetcode.week2;
+package com.sakuya.leetcode.week02;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,6 +42,9 @@ import java.util.List;
  */
 public class Normal412 {
 
+    /**
+     * 针对题意的解法
+     */
     public List<String> fizzBuzz(int n) {
         List<String> ans = new ArrayList<>();
         String fb = "FizzBuzz";
@@ -60,7 +63,9 @@ public class Normal412 {
         return ans;
     }
 
-
+    /**
+     * 一般解法，可以处理多个值
+     */
     public List<String> _fizzBuzz(int n) {
         List<String> ans = new ArrayList<>();
         HashMap<Integer, String> map = new HashMap<>();
