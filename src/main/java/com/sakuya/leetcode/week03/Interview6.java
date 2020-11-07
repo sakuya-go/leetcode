@@ -1,4 +1,4 @@
-package com.sakuya.leetcode.w3;
+package com.sakuya.leetcode.week03;
 
 import com.sakuya.leetcode.util.ListNode;
 
